@@ -17,7 +17,7 @@ for (int i = 0; i < arr2.GetLength(0); i++)
 {
     for (int j = 0; j < arr2.GetLength(1); j++)
     {
-        arr2[i, j] = new Random().Next(0, 10);
+        arr2[i, j] = new Random().Next(0, 5);
         Console.Write($"{arr2[i, j]} ");
     }
     Console.WriteLine();
@@ -28,3 +28,11 @@ array[0, 0] = arr1[0, 0] * arr2[0, 0] + arr1[1, 0] * arr2[1, 0];
 array[0, 1] = arr1[0, 0] * arr2[0, 1] + arr1[0, 1] * arr2[1, 1];
 array[1, 0] = arr1[1, 0] * arr2[0, 0] + arr1[1, 1] * arr2[1, 0];
 array[1, 1] = arr1[1, 0] * arr2[0, 1] + arr1[1, 1] * arr2[1, 1];
+for (int i = 0; i < array.GetLength(0); i++)
+{
+    for (int j = 0; j < array.GetLength(1); j++)
+    {
+        Console.Write($"{array[i, j]} ");
+    }
+    Console.WriteLine();
+}
