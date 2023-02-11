@@ -25,4 +25,6 @@ for (int i = 0; i < arr2.GetLength(0); i++)
 Console.WriteLine();
 int[,] array = new int[2, 2];
 array[0, 0] = arr1[0, 0] * arr2[0, 0] + arr1[1, 0] * arr2[1, 0];
-
+array[0, 1] = arr1[0, 0] * arr2[0, 1] + arr1[0, 1] * arr2[1, 1];
+array[1, 0] = arr1[1, 0] * arr2[0, 0] + arr1[1, 1] * arr2[1, 0];
+array[1, 1] = arr1[1, 0] * arr2[0, 1] + arr1[1, 1] * arr2[1, 1];
